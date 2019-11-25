@@ -327,7 +327,7 @@ a {
   margin-bottom: 2.66rem;
 }
 
-/*debug!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  */
+/* cards!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  */
 
 .previous_page a {
   padding: 1.66rem;
@@ -335,6 +335,12 @@ a {
 
 .previous_page {
   margin: auto 0;
+  position: relative;
+}
+
+.previous_page img {
+  position: absolute;
+  top: 50%;
 }
 
 .next_page a {
@@ -344,12 +350,14 @@ a {
   justify-content: center;
 }
 
-.next_page img {
-  align-self: center;
-}
-
 .next_page {
   margin: auto 0;
+  position: relative;
+}
+
+.next_page img {
+  position: absolute;
+  top: 50%;
 }
 
 .products {
@@ -369,7 +377,6 @@ a {
   max-width: 1072px;
   height: 100%;
   max-height: 652px;
-  /* background-color: aqua; */
 }
 
 .products a {
@@ -383,6 +390,10 @@ a {
   border-radius: 20px;
 }
 
+.product-wrapper img {
+  height: 100%;
+}
+
 .products-inner li:nth-child(-n + 4) {
   margin-bottom: 6%;
 }
@@ -390,16 +401,19 @@ a {
 .product {
   display: flex;
   flex-direction: column;
+  height: 306px;
 }
 
 .product-img {
   margin: 0 auto;
+  height: 72%;
 }
 
-.product-info {
-  margin: 0.83rem auto 1.25rem;
+.product-title {
+  margin: 0.83rem auto 0.33rem;
 }
 
-.product-info h5 {
-  margin: 0.33rem auto 0;
+.product-price {
+  margin: 0rem auto 1.8rem;
+  width: auto;
 }
