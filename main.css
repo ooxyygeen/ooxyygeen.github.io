@@ -32,7 +32,11 @@ h2 {
 }
 
 h3{
-
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.58rem;
 }
 
 h4{
@@ -56,6 +60,15 @@ p {
   line-height: 130%;
 }
 
+.p2 {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.0015em;
+  color: #112233
+}
+
 b {
   font-weight: 600;
   padding: 0;
@@ -70,6 +83,14 @@ a {
   text-decoration: none;
 }
 
+.big_number {
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-size: 5.33rem;
+  line-height: 6.91rem;
+  color: #FFCC00;
+}
+
 /* General================================================= */
 
 .container {
@@ -79,7 +100,7 @@ a {
 }
 
 .title {
-  margin: 110px auto 0;
+  margin: 9.16rem auto 0;
 }
 
 .button {
@@ -91,6 +112,22 @@ a {
   padding-top: 1rem;
   padding-bottom: 1rem;
   border-radius: 60px;
+}
+
+.pagination {
+  display: flex;
+  align-self: center;
+}
+
+.pagination ul {
+  list-style-type: none;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+}
+
+.pagination li {
+  padding: 0.833rem;
 }
 
 /* Header================================================== */
@@ -254,8 +291,8 @@ a {
 .img-main {
   margin-top: 12.083rem;
   margin-right: 14.25rem;
-  height: /*650px*/54.16rem;
-  width: /*375px*/31.25rem;
+  height: 54.16rem;
+  width: 31.25rem;
   padding: 0;
 }
 
@@ -318,6 +355,8 @@ a {
   transition: color 0.3s linear;
 }
 
+/* catalagoue======================================== */
+
 .catalogue {
   display: flex;
   flex-direction: row;
@@ -327,15 +366,14 @@ a {
   margin-bottom: 2.66rem;
 }
 
-/* cards!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  */
-
-.previous_page a {
+/*.previous_page a {
   padding: 1.66rem;
-}
+}*/
 
 .previous_page {
-  margin: auto 0;
+  margin: 25.5rem 0;
   position: relative;
+  /*height: 100%;*/
 }
 
 .previous_page img {
@@ -395,7 +433,7 @@ a {
 }
 
 .products-inner li:nth-child(-n + 4) {
-  margin-bottom: 6%;
+  margin-bottom: 3.33rem;
 }
 
 .product {
@@ -416,4 +454,130 @@ a {
 .product-price {
   margin: 0rem auto 1.8rem;
   width: auto;
+}
+
+/* collections======================================= */
+
+.collections-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.albums {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 2.5rem;
+}
+
+.album {
+  display: flex;
+  flex-direction: column;
+}
+
+.album_info {
+  margin-top: 1.33rem;
+}
+
+.album_info p {
+  margin-top: 0.3rem;
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 1.16rem;
+  line-height: 1.64rem;
+  color: #112233;
+  opacity: 0.5;
+}
+
+/* about us========================================== */
+
+.about_us-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.about_us-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 2.5rem;
+}
+
+.about_us-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 10rem;
+  max-width: 415px;
+}
+
+.about_us-text .p2 {
+  margin-bottom: 3.16rem;
+}
+
+.facts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.fact {
+  display: flex;
+  flex-direction: column;
+}
+
+.big_number {
+  align-self: center;
+  margin-bottom: 0.83rem;
+}
+
+/* footer============================================ */
+
+footer {
+  background-color: #040402;
+  color: #FAFAFA;
+  margin-top: 6.66rem;
+}
+
+.footer-inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+footer p {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 1.33rem;
+  line-height: 1.583rem;
+  opacity: 0.75;
+}
+
+footer h3 {
+  margin-bottom: 2.75rem;
+}
+
+.column1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 2.33rem;
+  margin-right: 7rem;
+}
+
+.column1 p {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.16rem;
+  line-height: 2rem;
+  color: #FAFAFA;
+  opacity: 0.5;
+}
+
+.column2, .column3, .column4, .column5 {
+  margin-top: 3.75rem;
+  max-width: 129px;
 }
