@@ -379,6 +379,7 @@ a {
 .previous_page img {
   position: absolute;
   top: 50%;
+  transform: translateY(-50%);
 }
 
 .next_page a {
@@ -396,6 +397,7 @@ a {
 .next_page img {
   position: absolute;
   top: 50%;
+  transform: translateY(-50%);
 }
 
 .products {
