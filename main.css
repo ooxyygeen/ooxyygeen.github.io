@@ -583,3 +583,24 @@ footer h3 {
   margin-top: 3.75rem;
   max-width: 129px;
 }
+
+/* reviews=========================================== */
+
+.reviews-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.comments ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.review-content {
+  display: inline-block;
+  background: #fff;
+  border-radius: 20px;
+}
