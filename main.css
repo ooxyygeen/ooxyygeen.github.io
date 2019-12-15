@@ -570,7 +570,7 @@ footer h3 {
 }
 
 .column1 p {
-  font-family: Open Sans;
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: normal;
   font-size: 1.16rem;
@@ -603,5 +603,4 @@ footer h3 {
   display: inline-block;
   background: #fff;
   border-radius: 20px;
-  max-width: 100px;
 }
