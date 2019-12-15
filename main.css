@@ -592,15 +592,16 @@ footer h3 {
   justify-content: space-between;
 }
 
-.comments ul {
+.comments ul  {
   list-style: none;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.review-content {
+.comment-wrapper {
   display: inline-block;
   background: #fff;
   border-radius: 20px;
+  max-width: 100px;
 }
