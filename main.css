@@ -58,6 +58,8 @@ p {
   font-size: 1.66rem;
   font-style: normal;
   line-height: 130%;
+  padding: 0;
+  margin: 0;
 }
 
 .p2 {
@@ -535,6 +537,99 @@ a {
   margin-bottom: 0.83rem;
 }
 
+/* reviews=========================================== */
+
+.reviews-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.comments {
+  margin-top: 5.33rem;
+}
+
+.comments ul  {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.comments-inner {
+  padding: 0;
+  margin: 0;
+}
+
+.comment-wrapper {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 20px;
+  max-width: 27.66rem;
+  padding: 2rem; 
+}
+
+.info_user {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1.33rem;
+}
+
+.data {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0.5rem 0 0.5rem 1rem;
+}
+
+.name {
+  margin-bottom: 0.33rem;
+}
+
+.name p {
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 1.66rem;
+  color: #112233;
+  padding: 0rem;
+  margin: 0rem;
+}
+
+.date p {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 1.16rem;
+  color: #112233;
+  opacity: 0.4;
+  padding: 0rem;
+  margin: 0rem;
+}
+
+.text-review p {
+  font-family: "Open Sans";
+  font-weight: normal;
+  font-size: 1.33rem;
+  line-height: 2rem;
+  color: #112233;
+  opacity: 0.85;
+  max-width: 27.75rem;
+}
+
+.read_more {
+  margin-top: 1.33rem;
+  max-width: 7rem;
+}
+
+.read_more p {
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 1.33rem;
+  line-height: 2rem;
+  color: #FFB23F;
+  text-decoration: none; 
+  border-bottom: 1px dashed #FFB23F; 
+}
 /* footer============================================ */
 
 footer {
@@ -565,8 +660,13 @@ footer h3 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-content: left;
   margin-top: 2.33rem;
   margin-right: 7rem;
+}
+
+.column1 img {
+  transform: translateX(-16%);
 }
 
 .column1 p {
@@ -584,23 +684,3 @@ footer h3 {
   max-width: 129px;
 }
 
-/* reviews=========================================== */
-
-.reviews-inner {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.comments ul  {
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.comment-wrapper {
-  display: inline-block;
-  background: #fff;
-  border-radius: 20px;
-}
