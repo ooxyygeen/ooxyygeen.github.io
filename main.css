@@ -566,14 +566,14 @@ a {
   flex-direction: column;
   background: #fff;
   border-radius: 20px;
-  max-width: 27.66rem;
-  padding: 2rem; 
+  max-width: 31.75rem;
 }
 
 .info_user {
   display: flex;
   flex-direction: row;
   margin-bottom: 1.33rem;
+  margin: 2rem 0 1.33rem 2rem;
 }
 
 .data {
@@ -606,6 +606,10 @@ a {
   margin: 0rem;
 }
 
+.text-review {
+  margin-left: 2rem;
+}
+
 .text-review p {
   font-family: "Open Sans";
   font-weight: normal;
@@ -613,11 +617,14 @@ a {
   line-height: 2rem;
   color: #112233;
   opacity: 0.85;
-  max-width: 27.75rem;
+  /*max-width: 27.75rem;*/
+  margin-left: 2rem;
 }
 
 .read_more {
   margin-top: 1.33rem;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
   max-width: 7rem;
 }
 
