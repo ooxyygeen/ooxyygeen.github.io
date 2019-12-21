@@ -2,10 +2,15 @@ html {
   font-size: 12px;
   --yellow-color: #FFCC00;
   --orange-color: #FFB23F;
+  --red-color: #F82228;
+  --black-color: #112233;
+  --grey-color: #4E525A;
+  --white-color: #FAFAFA;
+  --clear-white-color: #fff;
 }
 
 body {
-  background-color: #fafafa;
+  background-color: var(--white-color);
   padding: 0;
   margin: 0;
 }
@@ -34,7 +39,7 @@ h2 {
 }
 
 h3{
-  font-family: Open Sans;
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 2rem;
@@ -70,7 +75,7 @@ p {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.0015em;
-  color: #112233
+  color: var(--black-color);
 }
 
 b {
@@ -83,7 +88,7 @@ a {
   font-family: "Roboto", sans-serif;
   font-size: 1.33rem;
   font-weight: 500;
-  color: #112233;
+  color: var(--black-color);
   text-decoration: none;
 }
 
@@ -92,7 +97,7 @@ a {
   font-weight: 700;
   font-size: 5.33rem;
   line-height: 6.91rem;
-  color: #FFCC00;
+  color: var(--yellow-color);
 }
 
 /* General================================================= */
@@ -111,8 +116,8 @@ a {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   text-decoration: none;
-  color: #112233;
-  background-color: #ffcc00;
+  color: var(--black-color);
+  background-color: var(--yellow-color);
   padding-top: 1rem;
   padding-bottom: 1rem;
   border-radius: 60px;
@@ -189,7 +194,7 @@ a {
 
 .nav a {
   padding: 1.66rem;
-  color: #112233;
+  color: var(--black-color);
   position: relative;
   transition: color 0.3s linear;
 }
@@ -204,7 +209,7 @@ a {
 }*/
 
 .nav a:hover {
-  color: #f82228;
+  color: var(--red-color);
 }
 
 .nav a:hover:after {
@@ -212,7 +217,7 @@ a {
   display: block;
   width: 100%;
   height: 2px;
-  background-color: #f82228;
+  background-color: var(--red-color);
   position: absolute;
   top: 80%;
   left: 0;
@@ -244,7 +249,7 @@ a {
 .menu a {
   padding: 1.66rem;
   text-decoration: none;
-  color: #112233;
+  color: var(--black-color);
 }
 
 /* Main====================================================*/
@@ -323,7 +328,7 @@ a {
 
 .nav-shop a {
   padding: 1.5rem;
-  color: #112233;
+  color: var(--black-color);
   position: relative;
   text-align: center;
   /* transition: color 0.3s linear; */
@@ -335,7 +340,7 @@ a {
   /* text-align:center; */
   width: 172%;
   height: 2px;
-  background-color: #112233;
+  background-color: var(--black-color);
   position: absolute;
   top: 77%;
   left: -36%;
@@ -343,7 +348,7 @@ a {
 }
 
 .nav-shop a:hover {
-  color: #ffcc00;
+  color: var(--yellow-color);
 }
 
 .nav-shop a:hover::after {
@@ -351,7 +356,7 @@ a {
   display: block;
   width: 100%;
   height: 2px;
-  background-color: #ffcc00;
+  background-color: var(--yellow-color);
   position: absolute;
   top: 77%;
   left: 0;
@@ -429,7 +434,7 @@ a {
 
 .product-wrapper {
   display: inline-block;
-  background: #fff;
+  background: var(--clear-white-color);
   width: 21.08%;
   border-radius: 20px;
 }
@@ -492,7 +497,7 @@ a {
   font-weight: 400;
   font-size: 1.16rem;
   line-height: 1.64rem;
-  color: #112233;
+  color: var(--black-color);
   opacity: 0.5;
 }
 
@@ -567,7 +572,7 @@ a {
 .comment-wrapper {
   display: flex;
   flex-direction: column;
-  background: #fff;
+  background: var(--clear-white-color);
   border-radius: 20px;
   max-width: 31.75rem;
 }
@@ -594,7 +599,7 @@ a {
   font-family: "Open Sans";
   font-weight: 600;
   font-size: 1.66rem;
-  color: #112233;
+  color: var(--black-color);
   padding: 0rem;
   margin: 0rem;
 }
@@ -603,7 +608,7 @@ a {
   font-family: "Open Sans";
   font-weight: 400;
   font-size: 1.16rem;
-  color: #112233;
+  color: var(--black-color);
   opacity: 0.4;
   padding: 0rem;
   margin: 0rem;
@@ -614,7 +619,7 @@ a {
   font-weight: normal;
   font-size: 1.33rem;
   line-height: 150%; 
-  color: #112233;
+  color: var(--black-color);
   opacity: 0.85;
   /*max-width: 27.75rem;*/
   margin: 0 2rem 0 2rem;
@@ -640,7 +645,7 @@ a {
 
 footer {
   background-color: #040402;
-  color: #FAFAFA;
+  color: var(--white-color);
   margin-top: 6.66rem;
 }
 
@@ -681,7 +686,7 @@ footer h3 {
   font-weight: normal;
   font-size: 1.16rem;
   line-height: 2rem;
-  color: #FAFAFA;
+  color: var(--white-color);
   opacity: 0.5;
 }
 
