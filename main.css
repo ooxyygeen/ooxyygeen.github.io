@@ -1,11 +1,11 @@
 html {
   font-size: 12px;
-  --yellow-color: #FFCC00;
-  --orange-color: #FFB23F;
-  --red-color: #F82228;
+  --yellow-color: #ffcc00;
+  --orange-color: #ffb23f;
+  --red-color: #f82228;
   --black-color: #112233;
-  --grey-color: #4E525A;
-  --white-color: #FAFAFA;
+  --grey-color: #4e525a;
+  --white-color: #fafafa;
   --clear-white-color: #fff;
   --button-border: 60px;
 }
@@ -39,7 +39,7 @@ h2 {
   line-height: 130.5%;
 }
 
-h3{
+h3 {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 700;
@@ -47,7 +47,7 @@ h3{
   line-height: 2.58rem;
 }
 
-h4{
+h4 {
   font-family: "Open Sans", sans-serif;
   font-size: 1.5rem;
   font-weight: 400;
@@ -114,6 +114,34 @@ a {
 }
 
 .button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--black-color);
+  background-color: var(--yellow-color);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: var(--button-border);
+}
+
+input {
+  font-family: "Open Sans";
+  font-weight: normal;
+  font-size: 1.166rem;
+  line-height: 1.91rem;
+  color: var(--black-color);
+  opacity: 0.5;
+  padding: 1rem auto 1rem 2.66rem;
+  background: var(--white-color);
+  width: 24rem;
+  box-sizing: border-box;
+}
+
+input:focus {
+  background: var(--white-color);
+}
+
+button {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   text-decoration: none;
@@ -557,7 +585,7 @@ a {
   margin-top: 5.33rem;
 }
 
-.comments ul  {
+.comments ul {
   list-style: none;
   display: flex;
   flex-direction: row;
@@ -619,7 +647,7 @@ a {
   font-family: "Open Sans";
   font-weight: normal;
   font-size: 1.33rem;
-  line-height: 150%; 
+  line-height: 150%;
   color: var(--black-color);
   opacity: 0.85;
   /*max-width: 27.75rem;*/
@@ -639,8 +667,8 @@ a {
   font-size: 1.33rem;
   line-height: 2rem;
   color: var(--orange-color);
-  text-decoration: none; 
-  border-bottom: 1px dashed var(--orange-color); 
+  text-decoration: none;
+  border-bottom: 1px dashed var(--orange-color);
 }
 
 /* contacts========================================== */
@@ -725,10 +753,6 @@ footer {
   justify-content: space-between;
 }
 
-.socialMedia img {
-  color: var(--white-color);
-}
-
 footer p {
   font-family: "Roboto";
   font-weight: 500;
@@ -750,10 +774,6 @@ footer h3 {
   margin-right: 7rem;
 }
 
-/*.column1 img {
-  transform: translateX(-16%);
-}*/
-
 .authorityRights p {
   font-family: "Open Sans";
   font-style: normal;
@@ -764,8 +784,21 @@ footer h3 {
   opacity: 0.5;
 }
 
-.column2, .column3, .column4, .column5 {
+.column2,
+.column3,
+.column4,
+.column5 {
   margin-top: 3.75rem;
   max-width: 129px;
 }
 
+.socialMedia {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 12.16rem;
+}
+
+.socialMedia img {
+  color: var(--white-color);
+}
