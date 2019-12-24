@@ -7,7 +7,7 @@ html {
   --grey-color: #4e525a;
   --white-color: #fafafa;
   --clear-white-color: #fff;
-  --button-border: 60px;
+  --border-radius: 60px;
 }
 
 body {
@@ -121,35 +121,40 @@ a {
   background-color: var(--yellow-color);
   padding-top: 1rem;
   padding-bottom: 1rem;
-  border-radius: var(--button-border);
+  border-radius: var(--border-radius);
+}
+
+form {
+  width: 100%;
 }
 
 input {
   font-family: "Open Sans";
-  font-weight: normal;
+  font-weight: 400;
   font-size: 1.166rem;
   line-height: 1.91rem;
   color: var(--black-color);
-  opacity: 0.5;
-  padding: 1rem auto 1rem 2.66rem;
+  padding: 1rem 0;
+  padding-left: 2.66rem;
   background: var(--white-color);
-  width: 24rem;
+  width: 100%;
+  border: none;
+  border-radius: var(--border-radius);
   box-sizing: border-box;
-}
-
-input:focus {
-  background: var(--white-color);
 }
 
 button {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
   text-decoration: none;
   color: var(--black-color);
   background-color: var(--yellow-color);
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  border-radius: var(--button-border);
+  padding: auto;
+  border-radius: var(--border-radius);
+  border: none;
+  max-height: 3.75rem;
 }
 
 .pagination {
@@ -466,6 +471,7 @@ button {
   background: var(--clear-white-color);
   width: 21.08%;
   border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
 }
 
 .product-wrapper img {
@@ -545,6 +551,10 @@ button {
   margin-top: 2.5rem;
 }
 
+.about_us-content img {
+  box-shadow: 24px 24px 0 var(--yellow-color);
+}
+
 .about_us-text {
   display: flex;
   flex-direction: column;
@@ -561,6 +571,7 @@ button {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-top: 6.5rem;
 }
 
 .fact {
@@ -604,6 +615,7 @@ button {
   background: var(--clear-white-color);
   border-radius: 20px;
   max-width: 31.75rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.04);
 }
 
 .info_user {
@@ -733,6 +745,8 @@ footer {
   background-color: #040402;
   color: var(--white-color);
   margin-top: 6.66rem;
+  max-height: 28.83rem;
+  height: 100%;
 }
 
 .footer-inner {
@@ -774,7 +788,7 @@ footer h3 {
   margin-right: 7rem;
 }
 
-.authorityRights p {
+.copyright p {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: normal;
@@ -790,6 +804,16 @@ footer h3 {
 .column5 {
   margin-top: 3.75rem;
   max-width: 129px;
+}
+
+.column5 {
+  max-width: 288px;
+}
+
+.column5 button {
+  margin-top: 1.33rem;
+  width: 50%;
+  padding: 1rem 0;
 }
 
 .socialMedia {
